@@ -5,6 +5,9 @@
 		<meta charset="utf-8">
 		<title>Dojo Css</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	</head>
 
 	<body>
@@ -12,14 +15,37 @@
 <main>
 		<header>
 			<h1><span class="grey">Company</span><span class="blue">NAME</span></h1>
-			<nav>
-				<ul>
-					<li>What</li>
-					<li>Companies</li>
-					<li>Meet</li>
-					<li>Testimonials</li>
-					<li>Why</li>
-				</ul>
+			<nav id="bouton" class="BUTopen">
+                <div class="open">
+                    <ul class="MP">
+                        <li class="l1">What</li>
+                        <hr class="hr1">
+                        <li class="l1">Companies
+                            <ul class="SM">
+                                <li class="SLI">Company 1</li><hr class="hr2">
+                                <li class="SLI">Company 2</li><hr class="hr2">
+                                <li class="SLI">Company 3</li>
+                            </ul>
+                        </li>
+                        <hr class="hr1">
+                        <li class="l1">Meet
+                        </li>
+                        <hr class="hr1">
+                        <li class="l1">Testimonials
+                            <ul class="SM">
+                                <li class="SLI">Clients</li><hr class="hr2">
+                                <li class="SLI">Partners</li>
+                            </ul>
+                        </li>
+                        <hr class="hr1">
+                        <li class="l1">Why
+                            <ul class="SM" id="last">
+                                <li class="SLI">Because</li><hr class="hr2">
+                                <li class="SLI">Why not</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
 			</nav>
 		</header>
 
